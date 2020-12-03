@@ -1,0 +1,7 @@
+<div :v-for="(advertisement,index) in advertises" :key="index">
+      <h1>Success</h1>
+      <Card :title="advertisement.title" :image="advertisement.image" :about="advertisement.about" :price="advertisement.price"/>
+    </div>
+
+    <img height="100" width="100" v-bind:src="require('../assets/'+image)" />
+      <p>{{about}}   {{price}}</p>
